@@ -1,6 +1,6 @@
 package org.xandr.dao;
 
-import org.example.domain.Elemento;
+import org.xandr.domain.Elemento;
 
 import java.util.List;
 
@@ -15,4 +15,7 @@ public interface DaoElementos {
     public boolean modificarElemento(int id, String palabra);
     public void eliminarElemento(Elemento Elemento) ;
     public boolean eliminarElemento(int id) ;
-    }
+    public String getPalabraAdivinar(String categoria);
+
+    public void vaciarDiccionario();
+}
